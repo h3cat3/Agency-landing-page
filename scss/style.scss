@@ -67,7 +67,7 @@ button {
         list-style: none;
     }
     &__item{
-        margin-block: clamp(1rem, 5vw, 4rem);#
+        margin-block: clamp(1rem, 5vw, 4rem);
         margin-inline: auto;
         padding: 0.5rem 1rem;
         @include font(base, lg, m);
@@ -233,4 +233,7 @@ button {
             color: var(--White);
         }
     }
+}
+.hidden{
+    display: none;
 }

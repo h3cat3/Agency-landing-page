@@ -9,7 +9,10 @@ menuBtn.addEventListener('click', () => {
 });
 
 document.addEventListener('keydown', (e) => {
-    if(e.key === 'Escape') {menuBox.classList.add('hidden');}
-    expanded = false;
-    menuBtn.setAttribute('aria-expanded', expanded);
+    if(e.key === 'Escape') {
+        menuBox.classList.add('hidden');
+        expanded = false;
+        menuBtn.setAttribute('aria-expanded', expanded);
+    }
+    
 });

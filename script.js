@@ -1,6 +1,6 @@
 const menuBtn = document.querySelector('.nav__toggle');
 const menuBox = document.getElementById('mobile-menu');
-const expanded = false 
+let expanded = false;
 menuBtn.addEventListener('click', () => {
     menuBox.classList.toggle('hidden');
     expanded = !expanded

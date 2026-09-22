@@ -15,11 +15,13 @@ button {
     background: inherit;
     border: none;
 }
+.header{
+    position: fixed;
+    width: 100%;
+}
 .nav{
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    width: 100%;
     padding: clamp(1rem, 5vw, 4rem);
     color: var(--White);
     &__logo sgv{color: #FFF;}
@@ -43,6 +45,38 @@ button {
     &__toggle{
         @media (min-width: 64rem) {
             display: none;
+        }
+    }
+}
+.mobile-menu{
+    &__corner{
+        width: 0;
+        height: 0;
+        margin-top: -1rem;
+        margin-right: clamp(1rem, 5vw, 4rem);
+        margin-left: auto;
+        border-left: 1rem solid transparent;
+        border-top:1rem solid transparent;
+        border-right: 1rem solid var(--White);
+        border-bottom: 1rem solid var(--White);
+    }
+    &__list{
+        background-color: var(--White);
+        margin-inline: clamp(1rem, 5vw, 4rem);
+        padding: clamp(1rem, 5vw, 4rem);
+        list-style: none;
+    }
+    &__item{
+        margin-block: clamp(1rem, 5vw, 4rem);#
+        margin-inline: auto;
+        padding: 0.5rem 1rem;
+        @include font(base, lg, m);
+        color: var(--Dark-grayish-blue);
+        
+        width: fit-content;
+        &:hover{
+            background-color: var(--Yellow);
+            border-radius: 28px;
         }
     }
 }
